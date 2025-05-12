@@ -1,22 +1,20 @@
+import react from "react";
+import AppRouter from "./AppRouter";
 
-import react from 'react'
-import { BrowserRouter } from "react-router-dom"
-import AppRouter from "./AppRouter"
-import Navbar from "./components/navbar/Navbar"
+import { BrowserRouter } from "react-router-dom";
+
+import Navbar from "./components/navbar/Navbar";
 
 // import './app.css'
 
-
-
-function App(){
-  return(
+function App() {
+  return (
     <>
-    <Navbar/>
-    <BrowserRouter>
-    <AppRouter/>
-    </BrowserRouter>
-   
+      <Navbar />
+      <BrowserRouter>
+        <AppRouter />
+      </BrowserRouter>
     </>
-  ) 
+  );
 }
-export default App
+export default App;
