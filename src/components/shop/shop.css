@@ -1,1 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+.shop-container {
+  /* border: 2px solid black; */
+  padding: 0 200px;
+}
+
+.heading-shop {
+  /* border: 2px solid red; */
+  border-bottom: 2px solid #e2e8f0;
+  /* margin: 0px px; */
+  padding: 40px;
+  text-align: left;
+}
+
+.heading-shop h2 {
+  color: rgb(2, 80, 72);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 35px;
+  /* padding: 20px; */
+  font-family: "Playfair Display", serif;
+}
+.shop-item-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 50px;
+}
+.shop-items {
+  /* border: 2px solid green; */
+  display: flex;
+  flex-direction: column;
+  /* padding: 20px; */
+  gap: 5px;
+  padding-bottom: 20px;
+}
+
+.product-type {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: rgb(66, 75, 74);
+}
+
+.product-name {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 26px;
+  color: rgb(2, 80, 72);
+  font-family: "Playfair Display", serif;
+}
+.review-rating {
+  color: rgb(66, 75, 74);
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+}
+.discount-price {
+  text-decoration: line-through;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 700;
+  color: #a0a5a4;
+  margin-right: 20px;
+}
+.price {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 700;
+  color: rgb(66, 75, 74);
+}
+
+.footer-shop {
+  background-color: #f1f4f1;
+}
