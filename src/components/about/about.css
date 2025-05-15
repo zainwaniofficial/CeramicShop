@@ -245,7 +245,7 @@
   align-items: center;
   justify-content: space-evenly;
   /* border: 2px solid red; */
-  padding: 20px;
+  padding: 30px 20px;
   margin: 20px 0;
   border-bottom: 2px solid #cbd5e1;
 }
@@ -273,7 +273,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 200px;
+  padding: 30px 200px;
 }
 .footer-about p {
   color: rgb(66, 75, 74);
