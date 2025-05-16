@@ -82,6 +82,16 @@ const Shop = () => {
             </div>
           </div>
           <div className="shop-items">
+            <img src="/images/ceramic-pink-plate.jpg" alt="bottle" />
+            <span className="product-type">Ceramic</span>
+            <h2 className="product-name">Ceramic Plates</h2>
+            <div className="review-rating">*****</div>
+            <div>
+              <span className="discount-price">$355</span>
+              <span className="price">$232</span>
+            </div>
+          </div>
+          <div className="shop-items">
             <img src="/images/ceramic-plates-bowls.jpg" alt="bottle" />
             <span className="product-type">Ceramic</span>
             <h2 className="product-name">Ceramic Plates and Bowls</h2>
