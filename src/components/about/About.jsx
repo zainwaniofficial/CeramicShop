@@ -1,10 +1,10 @@
 import "./about.css";
 import React from "react";
-import { FaFacebook, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
+import Cta from "./Cta";
+import Footer from "../footer/Footer";
 // import { FaFacebook } from "react-icons/fa";
 
 const About = () => {
-  let iconStyles = { color: "black", margin: "10px" };
   return (
     <>
       <div className="about-container">
@@ -90,7 +90,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="cta">
+      {/* <div className="cta">
         <div className="cta-img">
           <img src="/images/footer-cta.jpg" alt="cta" />
         </div>
@@ -100,8 +100,9 @@ const About = () => {
           </h2>
           <a href="/shop">SHOP NOW</a>
         </div>
-      </div>
-      <div className="about-footer-nav">
+      </div> */}
+      <Cta />
+      {/* <div className="about-footer-nav">
         <div className="footer-nav-logo">CeramicShop</div>
         <div className="footer-nav-data">
           <ul>
@@ -125,11 +126,12 @@ const About = () => {
           <FaInstagram style={iconStyles} />
           <FaYoutube style={iconStyles} />
         </div>
-      </div>
-      <div className="footer-about">
+      </div> */}
+      {/* <div className="footer-about">
         <p>Copyright © 2025</p>
         <p>All rights reserved</p>
-      </div>
+      </div> */}
+      <Footer />
     </>
   );
 };

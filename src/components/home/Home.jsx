@@ -1,41 +1,14 @@
+import Banner from "./Banner";
 import "./home.css";
 import React from "react";
+import ShopItems from "./ShopItems";
+import Cta from "../about/Cta";
+import Footer from "../footer/Footer";
 
 const Home = () => {
   return (
     <div>
-      <div className="home-container">
-        <div className="home-container-div1">
-          <div className="homec-div1-container">
-            <div className="home-info">
-              <div className="homeinfo-h6">
-                <h6>Welcome to Ceramic Shop</h6>
-              </div>
-            </div>
-            <div className="homeinfo-h1">
-              <h1>
-                Elevate Your <br />
-                Space with <br />
-                Ceramic <br /> Elegance.
-              </h1>
-            </div>
-            <div className="homeinfo-h4">
-              <h4>Starting from just $149.00</h4>
-            </div>
-            <div className="home-button">
-              <a href="/shop">SHOP NOW</a>
-            </div>
-          </div>
-          <div className="homec-div1-container-2">
-            <div className="img1">
-              <img src="/images/hero-01.jpg" alt="hero1" />
-            </div>
-            <div className="img2">
-              <img src="/images/hero-02.jpg" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
+      <Banner />
       <div className="home-about-ceramic">
         <div className="ceramic-heading">
           <h6>ABOUT CERAMIC SHOP</h6>
@@ -98,75 +71,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="most-popular">
-        <div className="popular-heading">
-          <h6>MOST POPULAR</h6>
-          <h2>Discover the Latest Additions at Your Top Choice Flower Shop</h2>
-        </div>
-        <div className="shop-item-container">
-          <div className="shop-items">
-            <img src="/images/ceramic-cup.jpg" alt="ceramic cup" />
-            <span className="product-type">Ceramic</span>
-            <h2 className="product-name">Ceramic Cup</h2>
-            <div className="review-rating">*****</div>
-            <div>
-              <span className="discount-price">$355</span>
-              <span className="price">$232</span>
-            </div>
-          </div>
-
-          <div className="shop-items">
-            <img src="/images/ceramic-plates.jpg" alt="bottle" />
-            <span className="product-type">Ceramic</span>
-            <h2 className="product-name">Ceramic Planter</h2>
-            <div className="review-rating">*****</div>
-            <div>
-              <span className="discount-price">$355</span>
-              <span className="price">$232</span>
-            </div>
-          </div>
-          <div className="shop-items">
-            <img src="/images/ceramic-pink-plate.jpg" alt="bottle" />
-            <span className="product-type">Ceramic</span>
-            <h2 className="product-name">Ceramic Plates</h2>
-            <div className="review-rating">*****</div>
-            <div>
-              <span className="discount-price">$355</span>
-              <span className="price">$232</span>
-            </div>
-          </div>
-          <div className="shop-items">
-            <img src="/images/ceramic-plates-bowls.jpg" alt="bottle" />
-            <span className="product-type">Ceramic</span>
-            <h2 className="product-name">Ceramic Plates and Bowls</h2>
-            <div className="review-rating">*****</div>
-            <div>
-              <span className="discount-price">$355</span>
-              <span className="price">$232</span>
-            </div>
-          </div>
-          <div className="shop-items">
-            <img src="/images/ceramic-plates-spoons.jpg" alt="bottle" />
-            <span className="product-type">Ceramic</span>
-            <h2 className="product-name">Ceramic Plates and Spoons</h2>
-            <div className="review-rating">*****</div>
-            <div>
-              <span className="discount-price">$355</span>
-              <span className="price">$232</span>
-            </div>
-          </div>
-          <div className="shop-items">
-            <img src="/images/ceramic-vases-plates.jpg" alt="bottle" />
-            <span className="product-type">Pottery</span>
-            <h2 className="product-name">Ceramic Vases and Planters</h2>
-            <div className="review-rating">*****</div>
-            <div>
-              <span className="discount-price">$355</span>
-              <span className="price">$232</span>
-            </div>
-          </div>
-        </div>
-      </div>
+      <ShopItems />
       <div className="home-cta">
         <div className="cta-inside">
           <h2>Begin Your Ceramic Journey Explore Our Stunning Collections</h2>
@@ -174,6 +79,8 @@ const Home = () => {
           <a href="/shop">SHOP NOW</a>
         </div>
       </div>
+      <Cta />
+      <Footer />
     </div>
   );
 };

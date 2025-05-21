@@ -2,6 +2,8 @@ import "./contact.css";
 import React from "react";
 import { MdLocationOn, MdPhone, MdEmail } from "react-icons/md";
 import { FaFacebook, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
+import Cta from "../about/Cta";
+import Footer from "../footer/Footer";
 const Contact = () => {
   let iconStyles = { color: "black", margin: "10px" };
   return (
@@ -138,7 +140,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className="cta">
+      {/* <div className="cta">
         <div className="cta-img">
           <img src="/images/footer-cta.jpg" alt="cta" />
         </div>
@@ -148,8 +150,9 @@ const Contact = () => {
           </h2>
           <a href="/shop">SHOP NOW</a>
         </div>
-      </div>
-      <div className="about-footer-nav">
+      </div> */}
+      <Cta />
+      {/* <div className="about-footer-nav">
         <div className="footer-nav-logo">CeramicShop</div>
         <div className="footer-nav-data">
           <ul>
@@ -177,7 +180,8 @@ const Contact = () => {
       <div className="footer-about">
         <p>Copyright © 2025</p>
         <p>All rights reserved</p>
-      </div>
+      </div> */}
+      <Footer />
     </>
   );
 };
