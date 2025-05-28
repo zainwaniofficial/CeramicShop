@@ -10,6 +10,7 @@ import {
 
 const Footer = () => {
   let iconStyles = { color: "black", margin: "10px" };
+  let iconLove = { color: "red" };
 
   return (
     <div>
@@ -41,7 +42,7 @@ const Footer = () => {
       <div className="footer-about">
         <p>Copyright © 2025</p>
         <p>
-          Developed with <FaHeart /> by &nbsp;
+          Developed with <FaHeart style={iconLove} /> by &nbsp;
           <a href="https://github.com/zainwaniofficial" target="_blank">
             codewithxain
           </a>
