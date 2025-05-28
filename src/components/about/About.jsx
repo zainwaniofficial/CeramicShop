@@ -11,28 +11,6 @@ const About = () => {
     <>
       <AboutInfo />
       <AboutStory />
-      <div className="ourjourney">
-        <div className="ourjourney-1">
-          <img src="/images/our-story.jpg" alt="" />
-        </div>
-        <div className="ourjourney-2">
-          <img className="journey2-img" src="/images/our-journey.jpg" alt="" />
-
-          <div>
-            <h6>OUR JOURNEY</h6>
-            <h2>Our Ceramic Odyssey Crafting Beauty and Quality.</h2>
-            <p>
-              Our company story is a testament to the enduring love for
-              craftsmanship, where we combine our passion for ceramics with an
-              unwavering commitment to quality and timeless beauty. Explore the
-              journey that has led us to become a trusted source for exquisite
-              ceramic products.We're proud to share our story, which mirrors the
-              growth of a dream into a thriving destination for exceptional
-              creations, reflecting artistry and innovation.
-            </p>
-          </div>
-        </div>
-      </div>
 
       <div className="visiongoals">
         <div className="our-vision">

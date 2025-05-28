@@ -1,6 +1,12 @@
 import "./footer.css";
 import React from "react";
-import { FaFacebook, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaTwitter,
+  FaInstagram,
+  FaYoutube,
+  FaHeart,
+} from "react-icons/fa";
 
 const Footer = () => {
   let iconStyles = { color: "black", margin: "10px" };
@@ -34,7 +40,12 @@ const Footer = () => {
       </div>
       <div className="footer-about">
         <p>Copyright © 2025</p>
-        <p>All rights reserved</p>
+        <p>
+          Developed with <FaHeart /> by &nbsp;
+          <a href="https://github.com/zainwaniofficial" target="_blank">
+            codewithxain
+          </a>
+        </p>
       </div>
     </div>
   );

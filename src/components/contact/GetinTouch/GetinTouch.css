@@ -1,0 +1,192 @@
+.get-in-touch {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 100px 50px;
+  padding-top: 50px;
+  gap: 100px;
+  flex-wrap: nowrap;
+}
+
+.touch-message {
+  width: 500px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.touch-message h2 {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 58px;
+  color: #025048;
+  font-family: "Playfair Display", serif;
+}
+
+.getintouch-para {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(66, 75, 74);
+}
+
+.address {
+  display: flex;
+  gap: 10px;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 20px;
+}
+
+.icon {
+  color: rgb(2, 80, 72);
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.addressbox-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.addressbox-container h6 {
+  font-size: 14px;
+  line-height: 21px;
+  color: rgb(2, 80, 72);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.follow {
+  border: none;
+}
+
+.follow-para {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  font-size: 20px;
+  font-weight: 900;
+  color: #025048;
+}
+
+.form-wrapper {
+  background-color: #f3f5f2;
+  padding: 50px;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.name-fields {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.name-input {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.name-input input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.name-input small {
+  color: #666;
+  margin-top: 4px;
+  font-size: 13px;
+}
+
+input[type="email"],
+textarea {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.submit-button {
+  width: 140px;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid #003300;
+  color: #003300;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.submit-button:hover {
+  background-color: #e0eee0;
+}
+
+/* Tablet (≤ 992px) */
+@media (max-width: 992px) {
+  .get-in-touch {
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 20px;
+    gap: 60px;
+  }
+
+  .touch-message {
+    width: 100%;
+    text-align: center;
+  }
+
+  .form-wrapper {
+    padding: 30px;
+    width: 100%;
+  }
+
+  .name-fields {
+    flex-direction: column;
+  }
+
+  .follow-para {
+    justify-content: center;
+  }
+}
+
+/* Mobile (≤ 576px) */
+@media (max-width: 576px) {
+  .touch-message h2 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .getintouch-para {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .form-wrapper {
+    padding: 20px;
+  }
+
+  .submit-button {
+    width: 100%;
+  }
+}

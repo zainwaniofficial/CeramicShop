@@ -6,67 +6,6 @@
   font-family: "Work Sans", sans-serif;
 }
 
-.ourjourney {
-  /* border: 2px solid rgb(19, 40, 229); */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #f1f4f1;
-  /* background-color: #46b746; */
-}
-/* .ourjourney-1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #f1f4f1;
-  position: relative;
-} */
-.ourjourney-1 {
-  /* display: flex; */
-  position: relative;
-  top: -50px;
-}
-.ourjourney-2 {
-  display: flex;
-  justify-content: center;
-  justify-content: center;
-  /* padding: 20px; */
-  gap: 40px;
-}
-.ourjourney-2 div {
-  /* position: relative; */
-  width: 550px;
-}
-.ourjourney-2 {
-  /* border: 2px solid red; */
-  position: relative;
-  bottom: -60px;
-}
-
-.ourjourney-2 h6 {
-  font-family: "Work Sans", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
-  color: rgb(2, 80, 72);
-}
-.ourjourney-2 h2 {
-  font-size: 44px;
-  font-family: "Playfair Display", serif;
-  font-weight: 500;
-  line-height: 58px;
-  color: rgb(2, 80, 72);
-}
-.ourjourney-2 p {
-  font-family: "Work Sans", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  color: rgb(66, 75, 74);
-  text-align: justify;
-}
-
 .visiongoals {
   margin-top: 90px;
   /* border: 2px solid red; */
