@@ -1,11 +1,32 @@
 import "./contact.css";
-import React from "react";
+import React, { useState } from "react";
 import { MdLocationOn, MdPhone, MdEmail } from "react-icons/md";
 import { FaFacebook, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
 import Cta from "../about/Cta";
 import Footer from "../footer/Footer";
 const Contact = () => {
   let iconStyles = { color: "black", margin: "10px" };
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    message: "",
+  });
+  const handleInputChange = (e) => {
+    e.preventDefault();
+    const { name, value } = e.target;
+    // console.log(e.target);
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+  // console.log(formData);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(formData);
+    alert("Submitted");
+  };
   return (
     <>
       <div className="contact-container-div1">
@@ -91,22 +112,52 @@ const Contact = () => {
               <label className="form-label">Name *</label>
               <div className="name-fields">
                 <div className="name-input">
-                  <input type="text" name="firstName" placeholder="" required />
+                  <input
+                    type="text"
+                    name="firstName"
+                    placeholder=""
+                    required
+                    onChange={handleInputChange}
+                    value={formData.firstName}
+                  />
                   <small>First</small>
                 </div>
                 <div className="name-input">
-                  <input type="text" name="lastName" placeholder="" required />
+                  <input
+                    type="text"
+                    name="lastName"
+                    placeholder=""
+                    required
+                    onChange={handleInputChange}
+                    value={formData.lastName}
+                  />
                   <small>Last</small>
                 </div>
               </div>
 
               <label className="form-label">Email *</label>
-              <input type="email" name="email" required />
+              <input
+                type="email"
+                name="email"
+                required
+                onChange={handleInputChange}
+                value={formData.email}
+              />
 
               <label className="form-label">Comment or Message</label>
-              <textarea name="message" rows="5" required />
+              <textarea
+                name="message"
+                rows="5"
+                required
+                onChange={handleInputChange}
+                value={formData.message}
+              />
 
-              <button type="submit" className="submit-button">
+              <button
+                type="submit"
+                className="submit-button"
+                onClick={handleSubmit}
+              >
                 SUBMIT
               </button>
             </form>
@@ -181,7 +232,6 @@ const Contact = () => {
         <p>Copyright © 2025</p>
         <p>All rights reserved</p>
       </div> */}
-      <Footer />
     </>
   );
 };

@@ -1,0 +1,121 @@
+.home-about-ceramic {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+  margin: 50px auto;
+  max-width: 1200px;
+}
+
+.ceramic-heading h6 {
+  color: rgb(2, 80, 72);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.ceramic-para h2 {
+  font-family: "Playfair Display", serif;
+  color: #025048;
+  font-size: 36px;
+  line-height: 1.4;
+  font-weight: 500;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.ceramic-photos {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.ceramic-photos-1 img,
+.ceramic-photos-2 img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.ceramic-photos-1 {
+  flex: 1;
+}
+
+.ceramic-photos-2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ceramic-photos-2 h4 {
+  font-size: 18px;
+  color: #025048;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0 10px;
+  word-wrap: break-word;
+  text-align: left;
+}
+
+.ceramic-photos-2 p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.ceramic-photos-2 a {
+  font-size: 16px;
+  color: #007b7b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .ceramic-para h2 {
+    font-size: 28px;
+  }
+
+  .ceramic-photos {
+    flex-direction: column;
+  }
+
+  .ceramic-photos-2 h4 {
+    font-size: 16px;
+    padding: 0 8px;
+  }
+
+  .ceramic-photos-1,
+  .ceramic-photos-2 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .ceramic-heading h6 {
+    font-size: 12px;
+  }
+
+  .ceramic-para h2 {
+    font-size: 22px;
+  }
+
+  .ceramic-photos-2 h4 {
+    font-size: 15px;
+    line-height: 1.3;
+    padding: 0 6px;
+    text-align: center;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  .ceramic-photos-2 p,
+  .ceramic-photos-2 a {
+    font-size: 14px;
+  }
+}

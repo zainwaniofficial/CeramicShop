@@ -1,46 +1,16 @@
 import "./about.css";
 import React from "react";
 import Cta from "./Cta";
-import Footer from "../footer/Footer";
+
+import AboutInfo from "./AboutInfo/AboutInfo";
+import AboutStory from "./AboutStory/AboutStory";
 // import { FaFacebook } from "react-icons/fa";
 
 const About = () => {
   return (
     <>
-      <div className="about-container">
-        <div className="about-container-div1">
-          <div className="about-info">
-            <h1>About Us</h1>
-            <p>
-              Welcome to the world of CeramicShop, where artistry and innovation
-              come together to craft stunning ceramic pieces. Discover our
-              story, the passion that drives us, and our commitment to
-              delivering timeless beauty and quality.
-            </p>
-          </div>
-          <div className="about-info-img">
-            <img src="/images/about-03.jpg" alt="about 3" />
-          </div>
-        </div>
-      </div>
-      <div className="about-container-ourstory">
-        <div className="ourstory-1">
-          <h6>OUR STORY</h6>
-          <h2>Explore CeramicShop and Our Ceramic Artistry</h2>
-        </div>
-        <div className="ourstory-2">
-          <p>
-            Step into the world of CeramicShop, where we’re dedicated to
-            crafting elegant, functional ceramics that elevate your everyday
-            life. Our journey is a testament to the artistry and craftsmanship
-            that infuse each unique piece. Discover our story, meet the talented
-            artisans who bring these creations to life, and experience the
-            exceptional beauty that our ceramics add to your surroundings.
-            Explore the heart and soul of our store, where every piece is a work
-            of art, designed to make your moments more beautiful and special.​
-          </p>
-        </div>
-      </div>
+      <AboutInfo />
+      <AboutStory />
       <div className="ourjourney">
         <div className="ourjourney-1">
           <img src="/images/our-story.jpg" alt="" />
@@ -90,48 +60,7 @@ const About = () => {
         </div>
       </div>
 
-      {/* <div className="cta">
-        <div className="cta-img">
-          <img src="/images/footer-cta.jpg" alt="cta" />
-        </div>
-        <div className="cta-div">
-          <h2>
-            Uncover the World of Ceramic Artistry Start Your Journey Here!
-          </h2>
-          <a href="/shop">SHOP NOW</a>
-        </div>
-      </div> */}
       <Cta />
-      {/* <div className="about-footer-nav">
-        <div className="footer-nav-logo">CeramicShop</div>
-        <div className="footer-nav-data">
-          <ul>
-            <li>
-              <a href="/">HOME</a>
-            </li>
-            <li>
-              <a href="/about">ABOUT</a>
-            </li>
-            <li>
-              <a href="/shop">SHOP</a>
-            </li>
-            <li>
-              <a href="/contact">CONTACT</a>
-            </li>
-          </ul>
-        </div>
-        <div className="social-media-icons">
-          <FaFacebook style={iconStyles} />
-          <FaTwitter style={iconStyles} />
-          <FaInstagram style={iconStyles} />
-          <FaYoutube style={iconStyles} />
-        </div>
-      </div> */}
-      {/* <div className="footer-about">
-        <p>Copyright © 2025</p>
-        <p>All rights reserved</p>
-      </div> */}
-      <Footer />
     </>
   );
 };

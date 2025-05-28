@@ -46,7 +46,6 @@ const Shop = () => {
           <p>All rights reserved</p>
         </div>
       </div> */}
-      <Footer />
     </>
   );
 };

@@ -1,0 +1,130 @@
+.journey-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f4f1;
+  padding: 40px 20px;
+}
+
+.journey-image-top {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.journey-image-top img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.journey-content-block {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+  position: relative;
+  bottom: -40px;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.journey-side-img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.journey-text {
+  max-width: 550px;
+  flex: 1;
+}
+
+.journey-text h6 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #025048;
+}
+
+.journey-text h2 {
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #025048;
+  margin: 10px 0;
+}
+
+.journey-text p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #424b4a;
+  text-align: justify;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .journey-content-block {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    bottom: -20px;
+  }
+
+  .journey-side-img {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .journey-text {
+    max-width: 90%;
+  }
+
+  .journey-text h2 {
+    font-size: 32px;
+  }
+
+  .journey-text p {
+    font-size: 15px;
+  }
+
+  .journey-image-top {
+    height: 220px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .journey-wrapper {
+    padding: 30px 10px;
+  }
+
+  .journey-text h2 {
+    font-size: 26px;
+  }
+
+  .journey-text p {
+    font-size: 14px;
+  }
+
+  .journey-image-top {
+    height: 160px;
+    border-radius: 8px;
+  }
+
+  .journey-content-block {
+    gap: 20px;
+  }
+}

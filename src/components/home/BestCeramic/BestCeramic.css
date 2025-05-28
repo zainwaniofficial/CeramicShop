@@ -1,0 +1,119 @@
+.home-catagory {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  background-color: #f1f4f1;
+  padding: 40px 20px;
+  gap: 40px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.catagory-left,
+.catagory-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.catagory-left h6 {
+  color: #025048;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+}
+
+.catagory-left h2 {
+  font-size: 36px;
+  line-height: 46px;
+  font-weight: 500;
+  color: rgb(66, 75, 74);
+  font-family: "Playfair Display", serif;
+}
+
+.catagory-left p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: rgb(66, 75, 74);
+}
+
+.catagory-left-img,
+.catagory-right-img-1,
+.catagory-right-img-2 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  position: relative;
+  margin-top: 20px;
+}
+
+.catagory-left-img {
+  background-image: url("/images/category-01.jpg");
+}
+
+.catagory-right-img-1 {
+  background-image: url("/images/category-02.jpg");
+}
+
+.catagory-right-img-2 {
+  background-image: url("/images/category-03.jpg");
+}
+
+.catagory-image-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffffd8;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.catagory-image-container h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #025048;
+}
+
+.catagory-image-container p {
+  font-size: 15px;
+  color: #444;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .catagory-left h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .catagory-image-container {
+    padding: 12px;
+  }
+
+  .catagory-image-container h4 {
+    font-size: 16px;
+  }
+
+  .catagory-image-container p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .catagory-left h2 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .catagory-left p {
+    font-size: 14px;
+  }
+}
